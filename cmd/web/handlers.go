@@ -7,8 +7,8 @@ import (
 type PathUrlMap map[string]string
 
 type PathUrl struct {
-	Path string `yaml:"path"`
-	URL  string `yaml:"url"`
+	Path string `json:"path"`
+	URL  string `json:"url"`
 }
 
 func mapHandler(pathsToUrls PathUrlMap, fallback http.Handler) http.HandlerFunc {
